@@ -68,7 +68,11 @@ Saved/*
 
 # Compiled source files for the engine to use
 Intermediate/*
-Plugins/*/Intermediate/*
+Plugins/AdvancedSessions/AdvancedSessions/Binaries/*
+Plugins/AdvancedSessions/AdvancedSessions/Intermediate/*
+Plugins/AdvancedSessions/AdvancedSteamSessions/Binaries/*
+Plugins/AdvancedSessions/AdvancedSteamSessions/Intermediate/*
+
 
 # Cache files for the editor to use
 DerivedDataCache/*
