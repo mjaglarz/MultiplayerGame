@@ -200,6 +200,17 @@ public:
 			return nullptr;
 	}
 
+	// Adding in a compare operator so that std functions will work with this struct
+	FORCEINLINE bool operator==(const FBPUniqueNetId& Other) const
+	{
+		return (IsValid() && Other.IsValid() && (*GetUniqueNetId() == *Other.GetUniqueNetId()));
+	}
+
+	FORCEINLINE bool operator!=(const FBPUniqueNetId& Other) const
+	{
+		return !(IsValid() && Other.IsValid() && (*GetUniqueNetId() == *Other.GetUniqueNetId()));
+	}
+
 	FBPUniqueNetId()
 	{
 		bUseDirectPointer = false;
@@ -253,9 +264,17 @@ public:
 		EBPOnlinePresenceState PresenceState;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Online|Friend")
 		FString StatusString;
+
+	FBPFriendPresenceInfo()
+	{
+		bIsOnline = false;
+		bIsPlaying = false;
+		bIsPlayingThisGame = false;
+		bIsJoinable = false;
+		bHasVoiceSupport = false;
+		PresenceState = EBPOnlinePresenceState::Offline;
+	}
 };
-
-
 
 USTRUCT(BlueprintType)
 struct FBPFriendInfo
@@ -276,7 +295,14 @@ public:
 	bool bIsPlayingSameGame;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Online|Friend")
 	FBPFriendPresenceInfo PresenceInfo;
+
+	FBPFriendInfo()
+	{
+		OnlineState = EBPOnlinePresenceState::Offline;
+		bIsPlayingSameGame = false;
+	}
 };
+
 
 /** The types of comparison operations for a given search query */
 // Used to compare session properties
