@@ -1,5 +1,7 @@
 MultiplayerGame
 ====================
+Moved project to GitLab:
+https://gitlab.com/mjaglarz/MultiplayerGame
 # Multiplayer game (LAN/INTERNET) made with Unreal Engine v4.27.2
 
 Project based on Blueprint Multiplayer | v4.11 | Unreal Engine series from Unreal Engine channel on YouTube. Added Advanced Sessions Plugin support (https://github.com/mordentral/AdvancedSessionsPlugin). Replaced casting with blueprint interfaces, improved UI/UX and added more Steam features.
