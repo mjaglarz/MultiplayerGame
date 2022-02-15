@@ -5,7 +5,9 @@ MultiplayerGame
 Project based on Blueprint Multiplayer | v4.11 | Unreal Engine series from Unreal Engine channel on YouTube. Added Advanced Sessions Plugin support (https://github.com/mordentral/AdvancedSessionsPlugin). Replaced casting with blueprint interfaces, improved UI/UX and added more Steam features.
 
 ![HostGame](https://user-images.githubusercontent.com/49094709/154168433-f6d4def5-3b1f-47c2-927d-c3b542b5d121.png)
-![LobbyMeny](https://user-images.githubusercontent.com/49094709/154168452-1e23c6f8-f96c-47fa-ad99-2094d56e05b8.png)
+
+![LobbyMenu](https://user-images.githubusercontent.com/49094709/154169063-d7a6096d-cb77-46ac-b83a-e7e74b99e2cc.png)
+
 ![InGame](https://user-images.githubusercontent.com/49094709/154168456-2b549996-47a0-4da9-85d0-13dfe5b711a9.png)
 
 #
